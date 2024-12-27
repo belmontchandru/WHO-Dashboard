@@ -1,0 +1,106 @@
+body, h1, h2, h3, h4, select, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+/* header */
+
+.header-icon {
+    width:25px;
+    padding: 5px;
+    box-shadow: 1px 2px 3px grey;
+    border-radius: 50%;
+}
+
+.header-icon:hover{
+    background-color: #7fa7e6;
+    border-radius: 50%;
+}
+
+.who-logo {
+    max-width: 150px;
+}
+
+.menu-settings h3 {
+    color: #0b266c;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #0b266c;
+}
+
+.menu-icon-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.menu-settings{
+    display: flex;
+    gap:5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-name{
+    text-align: right;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color:#0b266c;
+}
+
+.profile-icon{
+    display: flex;
+    gap: 3px;
+}
+
+.search-container{
+    display: flex;
+    gap:1rem;
+    padding:15px 5px;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.search-container input[type="text"], 
+input[type="date"] {
+    border-radius: 4px;
+    height: 30px;
+    padding: 10px 5px 10px 15px;
+    border : 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px grey;
+}
+
+.select-field{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    align-items: center;
+}
+
+.home-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px;
+}
+
+.download-icon{
+    width:25px;
+    padding: 5px;
+}
+/* footer */

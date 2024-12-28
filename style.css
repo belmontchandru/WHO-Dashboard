@@ -69,11 +69,11 @@ body, h1, h2, h3, h4, select, input, button {
 
 .search-container{
     display: flex;
-    gap:1rem;
+    gap:3rem;
     padding:15px 5px;
     border-bottom: 1px solid grey;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin: 10px 0px;
 }
 
@@ -89,7 +89,7 @@ input[type="date"] {
 .select-field{
     display: flex;
     flex-wrap: wrap;
-    gap:0.5rem;
+    gap:1rem;
     align-items: center;
 }
 
@@ -102,5 +102,77 @@ input[type="date"] {
 .download-icon{
     width:25px;
     padding: 5px;
+    box-shadow: 1px 2px 3px grey;
+    border-radius: 50%;
+}
+
+.download-icon:hover{
+    background-color: #7fa7e6;
+    border-radius: 50%;
+}
+
+/* aside */
+
+
+.event-container{
+    display: flex;
+    margin: 10px 30px;
+}
+
+.current-event{
+    margin-bottom: 10px;
+}
+.current-event h3{
+    color: #304e89;
+    /* grid bg #c5e3ee */
+}
+.current-event-card-container{
+    width: 25%;
+    margin-right: 10px;
+}
+
+.disease-card{
+    flex-direction: column;
+    display: flex;
+    border-radius: 15px;
+    border:1px solid grey;
+;
+}
+.disease-description{
+    background-color: #ddeef9;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.disease-description h3 {
+    margin: 10px 20px;
+}
+
+.region-card{
+    margin: 0px;
+}
+.region-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px;
+}
+
+.live-status{
+    border-radius: 10px;
+    padding: 2px 10px;
+    background: #ffffff;
+}
+
+.infection-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+/* main */
+main{
+    /* background: #0b266c; */
+    flex-grow: 1;
 }
 /* footer */

@@ -13,11 +13,11 @@
     <header class="header-container">
         <div class="menu-icon-container">
             <div class="menu-settings">
-                <a href="#"><img class="header-icon" src="/images/menu_icon.png" alt="Menu"></a>
-                <a href="#"><img class="who-logo" src="/images/who_logo.png" alt="WHO logo"></a>
+                <a href="#"><img class="header-icon" src="./images/menu_icon.png" alt="Menu"></a>
+                <a href="#"><img class="who-logo" src="./images/who_logo.png" alt="WHO logo"></a>
                 <h3>Event Information Site for IHR National Focal Points</h3>
-                <a href="#"><img class="header-icon" src="/images/setting.png" alt="Settings"></a>
-                <a href="#"><img class="header-icon" src="/images/filter.png" alt="Filter"></a>
+                <a href="#"><img class="header-icon" src="./images/setting.png" alt="Settings"></a>
+                <a href="#"><img class="header-icon" src="./images/filter.png" alt="Filter"></a>
             </div>
 
             <div class="user-profile">
@@ -26,8 +26,8 @@
                     <span><strong>belmont.chandru@adappt.ai</strong></span>
                 </div>
                 <div class="profile-icon">
-                    <a href="#"><img class="header-icon" src="/images/profile_user.png" alt="User Profile"></a>
-                    <a href="#"><img class="header-icon" src="/images/bell.png" alt="Bell"></a>
+                    <a href="#"><img class="header-icon" src="./images/profile_user.png" alt="User Profile"></a>
+                    <a href="#"><img class="header-icon" src="./images/bell.png" alt="Bell"></a>
                 </div>
             </div>
         </div>
@@ -57,14 +57,18 @@
     <div class="home-section">
         <h1>Home</h1>
         <div>
-            <a href="#"><img class="download-icon" src="/images/download-icon.png" alt="Download Icon"></a>
+            <a href="#"><img class="download-icon" src="./images/download-icon.png" alt="Download Icon"></a>
         </div>
     </div>
     <div class="event-container">
-
         <div class="current-event-card-container">
             <div class="current-event">
-                <h3>Current Events</h3>
+                <div class="current-events-heading">
+                    <h3>Current Events</h3>
+                    <div class="heading-arrow-icon">
+                        <img class="header-icon" src="./images/double-arrow.png" alt="Expand Arrow">
+                    </div>
+                </div>
                 <div class="disease-card">
                     <div class="disease-description">
                         <h3>Saint Martin - Chikungunya virus disease</h3>
@@ -77,7 +81,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="current-event">
                 <div class="disease-card">
                     <div class="disease-description">
@@ -110,9 +113,78 @@
 
         <main>
             <div class="event-filtered">
-                <h3>Current Events Filtered by Hazard</h3>
+                <div class="events-heading">
+                    <h3>Current Events Filtered by Hazard</h3>
+                </div>
+                <div class="heading-arrow-icon">
+                    <img class="header-icon" src="./images/double-arrow.png" alt="Expand Arrow">
+                </div>
             </div>
+
+            <container class="total-events-container">
+                <div class="total-events-card">
+                    <p>Public Health Events</p>
+                    <strong>82</strong>
+                </div>
+            </container>
+
+            <container class="individual-event-details">
+                <div class="individual-event-item">
+                    <p>Animal</p>
+                    <strong>4</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Chemical</p>
+                    <strong>0</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Disaster</p>
+                    <strong>0</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>FoodSafety</p>
+                    <strong>4</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Infectious</p>
+                    <strong>71</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Non-communicable</p>
+                    <strong>1</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Nutritional Deficiency</p>
+                    <strong>0</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Product</p>
+                    <strong>0</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Societal</p>
+                    <strong>0</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Undetermined</p>
+                    <strong>1</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Radionuclear</p>
+                    <strong>1</strong>
+                </div>
+                <div class="individual-event-item">
+                    <p>Zoonosis</p>
+                    <strong>0</strong>
+                </div>
+            </container>
         </main>
+        <!-- <container class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15421149.811669856!2d67.84701905535182!3d19.328880324813554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dcda96c4f07%3A0x1d52956586b541b9!2sWorld%20Health%20Organization!5e0!3m2!1sen!2sin!4v1735599719388!5m2!1sen!2sin"
+                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </container> -->
     </div>
 
     <footer>

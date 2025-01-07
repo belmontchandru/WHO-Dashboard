@@ -10,8 +10,8 @@
 
 <body>
     <header class="header-container">
-        <div class="menu-icon-container">
-            <div class="menu-settings">
+        <div class="header-container--menu-icon-container">
+            <div class="header-container--menu-icon-container--menu-settings">
                 <a href="#"><img class="header-icon" src="./images/menu_icon.png" alt="Menu"></a>
                 <a href="#"><img class="who-logo" src="./images/who_logo.png" alt="WHO logo"></a>
                 <h3>Event Information Site for IHR National Focal Points</h3>
@@ -19,12 +19,12 @@
                 <a href="#"><img class="header-icon" src="./images/filter.png" alt="Filter"></a>
             </div>
 
-            <div class="user-profile">
-                <div class="profile-name">
+            <div class="header-container--menu-icon-container--user-profile">
+                <div class="header-container--menu-icon-container--user-profile--profile-name">
                     <span><strong>Belmont Chandru</strong></span>
                     <span><strong>belmont.chandru@adappt.ai</strong></span>
                 </div>
-                <div class="profile-icon">
+                <div class="header-container--menu-icon-container--user-profile--profile-icon">
                     <a href="#"><img class="header-icon" src="./images/profile_user.png" alt="User Profile"></a>
                     <a href="#"><img class="header-icon" src="./images/bell.png" alt="Bell"></a>
                 </div>
@@ -33,23 +33,23 @@
     </header>
 
     <div class="search-container">
-        <div class="select-field">
+        <div class="search-container--select-field">
             <label for="who-region">WHO Region</label>
             <input type="text" id="who-region" name="who-region" placeholder="Select WHO Regions" height="48">
         </div>
-        <div class="select-field">
+        <div class="search-container--select-field">
             <label for="country-name">Country</label>
             <input type="text" id="country-name" name="country-name" placeholder="Select Countries Teritories">
         </div>
-        <div class="select-field">
+        <div class="search-container--select-field">
             <label for="disease">Disease</label>
             <input type="text" id="disease" name="disease" placeholder="No Filter Selected">
         </div>
-        <div class="select-field">
+        <div class="search-container--select-field">
             <label for="date-from">Date From</label>
             <input type="date" id="date-from" name="date-from" placeholder="Day/Month/Year">
         </div>
-        <div class="select-field">
+        <div class="search-container--select-field">
             <label for="date-to">Date To</label>
             <input type="date" id="date-to" name="date-to" placeholder="Day/Month/Year">
         </div>
@@ -63,51 +63,61 @@
     </div>
 
     <div class="event-container">
-        <div class="current-event-card-container">
-            <div class="current-event">
-                <div class="current-events-heading">
+        <div class="event-container--current-event-card">
+            <div class="event-container--current-event-card--current-event">
+                <div class="event-container--current-event-card--current-event--current-events-heading">
                     <h3>Current Events</h3>
-                    <div class="heading-arrow-icon">
+                    <div
+                        class="event-container--current-event-card--current-event--current-events-heading--heading-arrow-icon">
                         <img class="header-icon" src="./images/double-arrow.png" alt="Expand Arrow">
                     </div>
                 </div>
-                <div class="disease-card">
-                    <div class="disease-description">
+                <div class="event-container--current-event-card--current-event--disease-card">
+                    <div class="event-container--current-event-card--current-event--disease-card--disease-description">
                         <h3>Saint Martin - Chikungunya virus disease</h3>
-                        <div class="region-status">
+                        <div
+                            class="event-container--current-event-card--current-event--disease-card--disease-description--region-status">
                             <p class="region-card">Region of Americas</p> <span class="live-status">Current</span>
                         </div>
                     </div>
-                    <div class="infection-card">
-                        <p class="infection-status">Infectiious</p> <span>12/23/24</span>
+                    <div class="event-container--current-event-card--current-event--disease-card--infection-card">
+                        <p
+                            class="event-container--current-event-card--current-event--disease-card--infection-card--infection-status">
+                            Infectiious</p> <span>12/23/24</span>
                     </div>
                 </div>
             </div>
-            <div class="current-event">
-                <div class="disease-card">
-                    <div class="disease-description">
+            <div class="event-container--current-event-card--current-event">
+                <div class="event-container--current-event-card--current-event--disease-card">
+                    <div class="event-container--current-event-card--current-event--disease-card--disease-description">
                         <h3>Canada - Measies</h3>
-                        <div class="region-status">
+                        <div
+                            class="event-container--current-event-card--current-event--disease-card--disease-description--region-status">
                             <p class="region-card">Region of Americas</p> <span class="live-status">Current</span>
                         </div>
                     </div>
-                    <div class="infection-card">
-                        <p class="infection-status">Infectiious</p> <span>12/23/24</span>
+                    <div class="event-container--current-event-card--current-event--disease-card--infection-card">
+                        <p
+                            class="event-container--current-event-card--current-event--disease-card--infection-card--infection-status">
+                            Infectiious</p> <span>12/23/24</span>
                     </div>
                 </div>
             </div>
 
-            <div class="current-event">
-                <div class="disease-card">
-                    <div class="disease-description">
+            <div class="event-container--current-event-card--current-event">
+                <div class="event-container--current-event-card--current-event--disease-card">
+                    <div class="event-container--current-event-card--current-event--disease-card--disease-description">
                         <h3>United States of America (the) Influenza due to identified avlan or animalinfluenza Virus
                         </h3>
-                        <div class="region-status">
+                        <div
+                            class="event-container--current-event-card--current-event--disease-card--disease-description--region-status">
                             <p class="region-card">Region of Americas</p> <span class="live-status">Current</span>
                         </div>
                     </div>
-                    <div class="infection-card">
-                        <p class="infection-status">Infectiious</p> <span>12/23/24</span>
+                    <div class="event-container--current-event-card--current-event--disease-card--infection-card">
+                        <p
+                            class="event-container--current-event-card--current-event--disease-card--infection-card--infection-status">
+                            Infectiious</p> <span>12/23/24</span>
                     </div>
                 </div>
             </div>
@@ -115,67 +125,67 @@
 
         <main>
             <div class="event-filtered">
-                <div class="events-heading">
+                <div class="event-filtered--events-heading">
                     <h3>Current Events Filtered by Hazard</h3>
                 </div>
-                <div class="heading-arrow-icon">
+                <div class="event-filtered--heading-arrow-icon">
                     <img class="header-icon" src="./images/double-arrow.png" alt="Expand Arrow">
                 </div>
             </div>
 
             <section class="total-events-container">
-                <div class="total-events-card">
+                <div class="total-events-container--total-events-card">
                     <p>Public Health Events</p>
                     <strong>82</strong>
                 </div>
             </section>
 
             <section class="individual-event-details">
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Animal</p>
                     <strong>4</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Chemical</p>
                     <strong>0</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Disaster</p>
                     <strong>0</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>FoodSafety</p>
                     <strong>4</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Infectious</p>
                     <strong>71</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Non-communicable</p>
                     <strong>1</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Nutritional Deficiency</p>
                     <strong>0</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Product</p>
                     <strong>0</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Societal</p>
                     <strong>0</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Undetermined</p>
                     <strong>1</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Radionuclear</p>
                     <strong>1</strong>
                 </div>
-                <div class="individual-event-item">
+                <div class="individual-event-details--individual-event-item">
                     <p>Zoonosis</p>
                     <strong>0</strong>
                 </div>

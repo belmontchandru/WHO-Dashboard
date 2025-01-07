@@ -10,7 +10,6 @@ body, h1, h2, h3, h4, select, input, button {
 .header-icon {
     width:20px;
     padding: 5px;
-    /* box-shadow: 1px 2px 3px grey; */
     border:1px solid #e6dede;
     border-radius: 50%;
 }
@@ -24,7 +23,7 @@ body, h1, h2, h3, h4, select, input, button {
     max-width: 150px;
 }
 
-.menu-settings h3 {
+.header-container--menu-icon-container--menu-settings h3 {
     color: #0b266c;
 }
 
@@ -34,27 +33,27 @@ body, h1, h2, h3, h4, select, input, button {
     border-bottom: 2px solid #0b266c;
 }
 
-.menu-icon-container{
+.header-container--menu-icon-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
 }
 
-.menu-settings{
+.header-container--menu-icon-container--menu-settings{
     display: flex;
     gap:5px;
     justify-content: space-around;
     align-items: center;
 }
 
-.user-profile{
+.header-container--menu-icon-container--user-profile{
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.profile-name{
+.header-container--menu-icon-container--user-profile--profile-name{
     text-align: right;
     font-size: 12px;
     display: flex;
@@ -63,7 +62,7 @@ body, h1, h2, h3, h4, select, input, button {
     color:#0b266c;
 }
 
-.profile-icon{
+.header-container--menu-icon-container--user-profile--profile-icon{
     display: flex;
     gap: 3px;
 }
@@ -86,7 +85,7 @@ input[type="date"] {
     
 }
 
-.select-field{
+.search-container--select-field{
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
@@ -123,31 +122,32 @@ input[type="date"] {
     margin-top: 20px;
 }
 
-.current-events-heading{
+.event-container--current-event-card--current-event--current-events-heading{
     display: flex;
     justify-content: space-between;
 }
 
-.current-event{
+.event-container--current-event-card--current-event{
     margin-bottom: 15px;
 }
-.current-event h3{
+
+.event-container--current-event-card--current-event h3{
     color: #304e89;
     margin: 10px;
-    /* grid bg #c5e3ee */
 }
-.current-event-card-container{
+
+.event-container--current-event-card{
     width: 25%;
     margin-right: 10px;
 }
 
-.disease-card{
+.event-container--current-event-card--current-event--disease-card{
     flex-direction: column;
     display: flex;
     border-radius: 15px;
     border:1px solid grey;
-;
 }
+
 .disease-description{
     background-color: #ddeef9;
     border-radius: 15px 15px 0px 0px;
@@ -160,7 +160,8 @@ input[type="date"] {
 .region-card{
     margin: 0px;
 }
-.region-status{
+
+.event-container--current-event-card--current-event--disease-card--disease-description--region-status{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,7 +174,7 @@ input[type="date"] {
     background: #ffffff;
 }
 
-.infection-card{
+.event-container--current-event-card--current-event--disease-card--infection-card{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,7 +194,7 @@ main{
     align-items: center;
 }
 
-.total-events-card{
+.total-events-container--total-events-card{
     display: flex;
     justify-content: space-between;
     border: 3px solid #80c37b;
@@ -203,13 +204,14 @@ main{
     border-radius: 5px;
 }
 
-.total-events-card p{
+.total-events-container--total-events-card p{
     margin: 5px 10px;
     font-size: 15px;
     font-weight: bold;
 
 }
-.total-events-card strong{
+
+.total-events-container--total-events-card strong{
     margin: 5px 10px;
     font-size: 22px;
 }
@@ -224,7 +226,7 @@ main{
     margin-top: 10px;
 }
 
-.individual-event-item{
+.individual-event-details--individual-event-item{
     background-color: #ddeef9;
     border-radius: 5px;
     display: flex;
@@ -233,18 +235,17 @@ main{
     align-items: center;
 }
 
-.individual-event-item p{
+.individual-event-details--individual-event-item p{
     font-size: 15px;
     font-weight: bold;
 }
 
-.individual-event-item strong {
+.individual-event-details--individual-event-item strong {
     font-size: 22px;
 }
 
 
 /* Responsive  */
-
 /* Media Query 768px */
 
 @media (max-width: 768px) {
@@ -255,12 +256,12 @@ main{
         flex-wrap: wrap;
     }
 
-    .user-profile{
+    .header-container--menu-icon-container--user-profile{
         justify-content: space-between;
         width: 100%;
     }
 
-    .menu-icon-container {
+    .header-container--menu-icon-container {
         flex-direction: column;
     }
 
@@ -268,7 +269,7 @@ main{
         flex-direction: column;
     }
 
-    .current-event-card-container {
+    .event-container--current-event-card {
         width: 100%;
         margin-right: 0;
     }
@@ -290,7 +291,7 @@ main{
 }
 
 @media (max-width: 700px){
-    .menu-settings {
+    .header-container--menu-icon-container--menu-settings {
         flex-direction: row;
         justify-content: space-between;
         width:100%;
@@ -303,13 +304,14 @@ main{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin: 1rem;
+        margin: 1rem;   
     }
 
-    .select-field{
+    .search-container--select-field{
         width: -webkit-fill-available;
     }
-    .select-field label, input {
+
+    .search-container--select-field label, input {
         width: 100%;
     }
 }
@@ -319,7 +321,8 @@ main{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
-    .menu-icon-container {
+    
+    .header-container--menu-icon-container {
         flex-direction: column;
     }
 }
